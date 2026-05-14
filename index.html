@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Master : Tours Gratuits et Spins Illimités 2026 - Liens Quotidiens</title>
+    <meta name="description" content="Récupérez vos tours gratuits (spins) pour Coin Master. Guide complet 2026 pour obtenir des millions de pièces et des tours quotidiens mis à jour.">
+    <meta name="keywords" content="Coin Master tours gratuits, spins gratuits coin master, liens spins 2026, astuces coin master fr, pièces gratuites">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "SoftwareApplication",
+      "name": "Coin Master Rewards Manager",
+      "operatingSystem": "Android, iOS",
+      "applicationCategory": "GameApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "EUR"
+      }
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        :root {
+            --cm-blue: #3b82f6;
+            --cm-gold: #fbbf24;
+            --cm-yellow: #fde047;
+            --cm-dark: #1e1b4b;
+        }
+
+        body {
+            margin: 0; font-family: 'Poppins', sans-serif;
+            color: #1e293b; background: #000;
+            display: flex; flex-direction: column; align-items: center;
+            min-height: 100vh; position: relative; overflow-x: hidden;
+        }
+
+        /* --- ARRIÈRE-PLAN --- */
+        .bg-scene {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202101/2012/LAtPofhBAsXv5YhN7S767S9Y.jpg'); 
+            background-size: cover; background-position: center; 
+            filter: blur(5px) brightness(0.5); z-index: -2;
+        }
+        
+        .bg-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, rgba(0, 0, 0, 0.85) 100%);
+            z-index: -1;
+        }
+
+        .header-stats {
+            width: 100%; background: rgba(59, 130, 246, 0.9); padding: 12px 0;
+            font-size: 0.75rem; display: flex; justify-content: center; gap: 20px;
+            color: white; border-bottom: 3px solid var(--cm-gold); z-index: 20; text-transform: uppercase;
+        }
+
+        /* LIVE FEED */
+        #live-feed { position: fixed; bottom: 20px; left: 20px; width: 280px; z-index: 100; }
+        .feed-item {
+            background: rgba(255, 255, 255, 0.95); color: #333; border-left: 5px solid var(--cm-gold);
+            padding: 12px 15px; border-radius: 12px; font-size: 0.75rem; margin-top: 10px;
+            display: flex; align-items: center; gap: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            animation: slideIn 0.5s ease-out forwards;
+        }
+
+        @keyframes slideIn { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
+
+        /* LOGO FLOTTANT (PIGGY/SPIN) */
+        .floating-icon {
+            margin-top: 40px;
+            width: 140px; height: auto;
+            animation: floatAnim 4s ease-in-out infinite;
+            z-index: 15;
+            filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.8));
+        }
+
+        @keyframes floatAnim {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-15px) scale(1.05); }
+        }
+
+        /* CARTE PRINCIPALE */
+        .app-card {
+            background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%); border-radius: 35px;
+            padding: 40px 25px; width: 90%; max-width: 400px;
+            text-align: center; box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+            margin: 20px 0 40px 0; border: 4px solid var(--cm-gold);
+            z-index: 10; box-sizing: border-box;
+        }
+
+        h1 { font-family: 'Bangers', cursive; color: var(--cm-blue); margin: 0; letter-spacing: 2px; font-size: 2.5rem; text-shadow: 2px 2px 0px var(--cm-gold); }
+
+        .input-box {
+            width: 100%; box-sizing: border-box; padding: 16px; margin: 10px 0; 
+            border-radius: 15px; border: 3px solid #cbd5e1; font-size: 1rem; 
+            text-align: center; font-weight: bold; outline: none;
+        }
+        .input-box:focus { border-color: var(--cm-blue); }
+
+        .btn {
+            width: 100%; padding: 20px; border: none; border-radius: 15px;
+            background: linear-gradient(180deg, var(--cm-gold) 0%, #d97706 100%);
+            color: #fff; font-weight: 900; text-transform: uppercase; cursor: pointer;
+            box-shadow: 0 6px 0 #92400e; margin-top: 15px; font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .btn:active { transform: translateY(3px); box-shadow: 0 2px 0 #92400e; }
+
+        .step { display: none; }
+        .step.active { display: block; }
+        #console { background: #1e1b4b; padding: 15px; border-radius: 12px; color: var(--cm-yellow); font-family: monospace; font-size: 0.75rem; height: 100px; text-align: left; margin: 15px 0; overflow: hidden; border: 1px solid var(--cm-blue); }
+
+        /* SECTION SEO */
+        .seo-content {
+            max-width: 850px; background: white; padding: 40px;
+            margin: 0 20px 50px 20px; border-radius: 25px; line-height: 1.7;
+            color: #334155; text-align: left; z-index: 10; box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        .seo-content h2 { color: var(--cm-blue); border-bottom: 3px solid var(--cm-gold); display: inline-block; margin-bottom: 20px; }
+
+        /* MODAL CPA */
+        #offer-modal {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95); display: none; justify-content: center; align-items: center; z-index: 1000;
+        }
+        .modal-content { background: #fff; border-radius: 25px; width: 95%; max-width: 450px; overflow: hidden; position: relative; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-scene"></div>
+    <div class="bg-overlay"></div>
+
+    <div class="header-stats">
+        <span><i class="fa fa-bolt"></i> Status : Serveur Actif</span>
+        <span><i class="fa fa-calendar"></i> <b id="date-fr"></b></span>
+        <span><i class="fa fa-user-circle"></i> En ligne : 2,845</span>
+    </div>
+
+    <!-- Image du Cochon Coin Master -->
+    <img src="https://static.wikia.nocookie.net/logopedia/images/8/82/Coin_Master_logo.png/revision/latest/scale-to-width-down/300?cb=20250401124523" class="floating-icon" alt="Tours Gratuits Coin Master">
+
+    <div id="live-feed"></div>
+
+    <div class="app-card">
+        <div class="step active" id="step1">
+            <h1>COIN MASTER</h1>
+            <p style="font-size: 0.9rem; color: #475569; margin-bottom: 20px; font-weight: 700;">Générateur de Tours & Pièces</p>
+            
+            <input type="text" id="username" class="input-box" placeholder="Nom d'utilisateur Coin Master">
+            
+            <select id="resource-select" class="input-box">
+                <option value="1000">1,000 Tours (Spins)</option>
+                <option value="5000" selected>5,000 Tours + 100M Pièces</option>
+                <option value="10000">10,000 Tours + 500M Pièces (Max)</option>
+            </select>
+
+            <button class="btn" onclick="startProcess()">Obtenir mes Tours</button>
+        </div>
+
+        <div class="step" id="step2">
+            <h2>Initialisation...</h2>
+            <div id="console"></div>
+        </div>
+
+        <div class="step" id="step3">
+            <h1 id="counter" style="font-size: 3rem; color: var(--cm-gold);">0</h1>
+            <p style="font-weight:900; color: var(--cm-blue);">VÉRIFICATION HUMAINE</p>
+            <p style="font-size: 0.8rem; margin-bottom: 15px; color: #64748b;">Dernière étape ! Pour éviter les abus de robots, veuillez valider votre identité pour débloquer les ressources sur votre compte.</p>
+            <button class="btn" onclick="showLocker()">Vérifier & Débloquer</button>
+        </div>
+    </div>
+
+    <article class="seo-content">
+        <h2>Comment obtenir des tours gratuits Coin Master en 2026 ?</h2>
+        <p>Pour devenir le prochain <strong>Coin Master</strong>, vous avez besoin d'un flux constant de spins (tours). Notre plateforme regroupe les derniers <strong>liens de tours gratuits</strong> testés et validés par la communauté française.</p>
+        
+        <h3>Stratégies pour vos Pièces et Spins</h3>
+        <p>Ne laissez pas vos villages sans défense ! En utilisant nos astuces quotidiennes, vous pouvez accumuler assez de <strong>pièces gratuites</strong> pour terminer vos constructions sans dépenser un centime. Nos algorithmes scannent les réseaux sociaux officiels pour centraliser les récompenses en un seul clic.</p>
+        
+        <h3>Événements et Cartes Rares</h3>
+        <p>En plus des tours, n'oubliez pas de participer aux échanges de cartes dorées. En complétant vos sets, vous pouvez débloquer des bonus allant jusqu'à 50 000 spins. Restez connectés pour ne manquer aucun événement de pillage ou d'attaque !</p>
+    </article>
+
+    <div id="offer-modal">
+        <div class="modal-content">
+            <div style="background:var(--cm-blue); padding:18px; color:white; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-weight:900; font-size:0.9rem;">VÉRIFICATION COIN MASTER</span>
+                <span id="timer" style="font-family:monospace; background:rgba(0,0,0,0.3); padding:4px 8px; border-radius:5px;">05:00</span>
+            </div>
+            <div style="height:500px;">
+                <!-- URL DE VOTRE LOCKER ICI -->
+                <iframe src="https://tundrafile.com/1895872" style="width:100%; height:100%; border:none;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('date-fr').innerText = new Date().toLocaleDateString('fr-FR');
+
+        // LIVE FEED (Simule des gains en temps réel)
+        const names = ["Viking_Guerrier", "Master_Spins", "Pilleur_Fou", "CM_Addict", "Spin_Queen", "Roi_des_Pièces"];
+        setInterval(() => {
+            const feed = document.getElementById('live-feed');
+            const div = document.createElement('div');
+            div.className = 'feed-item';
+            const val = [1000, 5000, 10000][Math.floor(Math.random() * 3)];
+            div.innerHTML = `<i class="fa fa-refresh" style="color:var(--cm-blue)"></i> <span><b>${names[Math.floor(Math.random()*names.length)]}</b> a généré ${val.toLocaleString()} Spins !</span>`;
+            feed.appendChild(div);
+            if(feed.children.length > 3) feed.removeChild(feed.children[0]);
+            setTimeout(() => { div.style.opacity = '0'; setTimeout(()=>div.remove(), 500); }, 4000);
+        }, 3500);
+
+        function startProcess() {
+            const user = document.getElementById('username').value;
+            if(!user || user.length < 3) return alert("Veuillez entrer un nom d'utilisateur valide");
+            
+            document.getElementById('step1').classList.remove('active');
+            document.getElementById('step2').classList.add('active');
+            
+            let lines = [
+                "Recherche de l'utilisateur : " + user,
+                "Établissement d'une connexion cryptée...",
+                "Accès à la base de données des spins...",
+                "Injection des tours gratuits demandés...",
+                "Synchronisation avec le compte Coin Master...",
+                "Nettoyage des traces de connexion...",
+                "Réussite ! En attente de vérification finale..."
+            ];
+            
+            let i = 0;
+            let iv = setInterval(() => {
+                if(i < lines.length) {
+                    let p = document.createElement('div'); 
+                    p.innerHTML = `<span style="color:var(--cm-blue)">[INFO]</span> ` + lines[i];
+                    document.getElementById('console').appendChild(p);
+                    i++;
+                } else { 
+                    clearInterval(iv); 
+                    setTimeout(runCounter, 1000);
+                }
+            }, 900);
+        }
+
+        function runCounter() {
+            document.getElementById('step2').classList.remove('active');
+            document.getElementById('step3').classList.add('active');
+            let cur = 0, target = parseInt(document.getElementById('resource-select').value);
+            let iv = setInterval(() => {
+                if(cur >= target) { 
+                     clearInterval(iv); 
+                     document.getElementById('counter').innerText = target.toLocaleString() + " SPINS";
+                } else { 
+                     cur += Math.floor(target/20);
+                     if(cur > target) cur = target;
+                     document.getElementById('counter').innerText = cur.toLocaleString() + " SPINS";
+                }
+            }, 50);
+        }
+
+        function showLocker() {
+            document.getElementById('offer-modal').style.display = 'flex';
+            let duration = 300;
+            let cd = setInterval(() => {
+                let m = parseInt(duration / 60, 10), s = parseInt(duration % 60, 10);
+                document.getElementById('timer').innerText = `0${m}:${s < 10 ? '0'+s : s}`;
+                if(--duration < 0) clearInterval(cd);
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
